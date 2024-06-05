@@ -1,0 +1,79 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu
+{
+    padding: 15px 0;
+    display: flex;
+}
+.menu ul
+{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 100%;
+}
+.menu ul li
+{
+    width: 25%;
+    font-size: 32px;
+}
+.image1
+{
+    height: 100vh;
+    width: 100%; 
+}
+.image1 img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.image2
+{
+    height: 100vh;
+    width: 100%;
+    background-color: teal;
+    background-image: url("gun3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.menu i
+{
+    display: none;
+}
+
+@media (max-width: 992px)
+{
+    .menu ul
+    {
+        flex-direction: column;
+    }
+    .menu ul li
+    {
+        width: 100%;
+        text-align: center;
+        list-style-position: outside;
+    }
+}
+@media (max-width: 576px)
+{
+    .menu
+    {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .menu ul
+    {
+        display: none;
+    }
+    .menu i
+    {
+        display: block;
+        font-size: 40px;
+    }
+
+}
